@@ -132,7 +132,7 @@ pub fn new_partial(
 			// Typically these keys should be inserted with RPC calls to `author_insertKey`.
 				 sp_keystore::Keystore::sr25519_generate_new(
 					 &*keystore,
-					 node_template_runtime::pallet_template::KEY_TYPE,
+					 node_template_runtime::pallet_offchain_signed::KEY_TYPE,
 					 Some("//Alice"),
 				 ).expect("Creating key with account Alice should succeed.");
 				 }
